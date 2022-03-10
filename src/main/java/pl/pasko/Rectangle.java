@@ -2,10 +2,13 @@ package pl.pasko;
 
 public class Rectangle extends Shape{
 
-    private int length;
-    private int width;
+    private double length;
+    private double width;
 
-    public Rectangle(int length, int width) {
+    public Rectangle() {
+    }
+
+    public Rectangle(double length, double width) {
         if(length <= 0){
             this.length = 0;
         } else {
@@ -20,13 +23,13 @@ public class Rectangle extends Shape{
     }
 
     @Override
-    public int getArea() {
+    public double getArea() {
         return length * width;
 
     }
 
     @Override
-    public int getPerimeter() {
+    public double getPerimeter() {
         return (2*length) + (2*width);
 
     }
