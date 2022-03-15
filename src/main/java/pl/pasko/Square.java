@@ -2,17 +2,18 @@ package pl.pasko;
 
 public class Square extends Rectangle{
 
-    private int length;
-    private int width;
+    private double side;
 
-    public Square(int length, int width) {
-        super(length, width);
-        if(length == width){
-            this.length = this.width;
-        } else {
-            System.out.println("Length does not equal width. This is not a square");
-
-        }
+    public Square(double side) {
+        this.side = side;
     }
 
+    public double getArea(){
+        return side * side;
+    }
+    public double getPerimeter(){
+        return 4 * side;
+    }
 }
+
+

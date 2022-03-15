@@ -2,7 +2,7 @@ package pl.pasko;
 
 abstract class Shape {
 
-    abstract int getArea();
+    abstract double getArea();
 
-    abstract int getPerimeter();
+    abstract double getPerimeter();
 }
